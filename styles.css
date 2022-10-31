@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto:wght@100;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@100;400;700;900&display=swap");
 
 :root * {
   font-family: "Roboto", sans-serif;
@@ -93,6 +93,9 @@ a:active,
 .img {
   max-width: 100vw;
 }
+.img-panda {
+  width: 100vw;
+}
 .card {
   position: relative;
   text-align: center;
@@ -105,14 +108,13 @@ a:active,
   color: white;
   text-transform: uppercase;
   font-size: 6.65625rem;
-  width: 500.31px;
-  height: 400px;
-  left: 880px;
-  top: 86px;
+  width: 31.269rem;
+  height: 25rem;
+  left: 55rem;
+  top: 5.375rem;
   margin: 0;
   font-style: normal;
   font-weight: 700;
-
   line-height: 75%;
 }
 .favorite-text {
@@ -131,8 +133,9 @@ a:active,
 }
 .card-favorite .btn {
   position: absolute;
-  top: calc(626px - 80px);
-  left: 983px;
+  top: calc(39.125rem - 5rem);
+  left: 61.438rem;
+  /* undone */
   z-index: 2;
   width: 298px;
   height: 54px;
@@ -159,7 +162,6 @@ a:active,
 .container {
   display: flex;
   flex-direction: row;
-
   margin: 140px 120px;
   padding: 0;
 }
@@ -266,7 +268,6 @@ a:active,
 }
 .hero-1 {
   position: relative;
-  border: solid 1px red;
   min-height: 1100px;
 }
 .btn-favorite {
@@ -298,17 +299,81 @@ a:active,
 .pick-a-friend-1 {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: 0 6.1875em;
+}
+.pick-a-friend-1 h3 {
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 120%;
+  color: var(--orange);
+  align-self: center;
+}
+.pick-a-friend-1 h4 {
+  font-weight: 400;
+  font-size: 2.25rem;
+  line-height: 130%;
+  color: var(--black-1);
+  align-self: center;
+}
+.pick-a-friend-text1 {
+  text-align: left;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 120%;
+  color: var(--black-1);
+}
+.pick-a-friend-text2 {
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 130%;
+  color: var(--black-1);
+  margin: 0;
+}
+.pick-a-friend-text3 {
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 130%;
+  color: var(--black-1);
+  margin: 0;
+}
+.pick-a-friend-text3 a {
+  text-decoration: underline var(--orange);
+  color: var(--black-1);
 }
 .pick-a-friend-2 {
   display: flex;
   flex-direction: row;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.card-white {
+  width: 10.5rem;
+  height: 10.5rem;
+  border: solid 1px var(--orange-2);
+  background: white;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-container-pick-a-friend-2 {
+  display: flex;
+  flex-direction: column;
+  word-wrap: wrap;
+  max-width: 10.5rem;
+  color: var(--black-1);
+}
+.btn-feed-friend {
+  padding: 1em 2.5em;
 }
 /* ********* testimonials */
 .wrapper {
   position: relative;
-  padding: 8.75em 0;
+  padding: 8em 0;
 }
 .cards-testimonials {
   width: 72.5vw;
@@ -330,8 +395,9 @@ a:active,
   border-width: 2px;
   border-style: solid;
   margin-bottom: 1.25em;
-
   background: var(--gray-light);
+  font-size: 0.9375rem;
+  color: var(--gray);
 }
 
 ::-webkit-scrollbar {
@@ -351,7 +417,7 @@ a:active,
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #b30000;
+  background: var(--orange-hover);
 }
 
 .testimonials-container {
@@ -374,7 +440,7 @@ a:active,
   align-items: center;
 }
 .testimonials-info > * {
-  padding: 0.2em;
+  padding: 0.1em;
 }
 .testimonials-title {
   font-weight: 400;
