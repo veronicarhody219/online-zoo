@@ -159,13 +159,14 @@ a:active,
   text-transform: uppercase;
   font-size: 6.65625rem;
   width: 31.269rem;
-  left: 55rem;
+  right: 14rem;
   top: 5.375rem;
   margin: 0;
   font-style: normal;
   font-weight: 700;
   line-height: 75%;
 }
+
 .hamburger {
   display: none;
 }
@@ -179,7 +180,7 @@ a:active,
   .card-favorite h2 {
     font-size: 3.393rem;
     max-width: 20rem;
-    left: 35rem;
+    right: 11rem;
     top: 3.6rem;
   }
 }
@@ -199,14 +200,14 @@ a:active,
 .btn-watch-online {
   position: absolute;
   top: 34.125rem;
-  left: 55rem;
+  right: 14rem;
   z-index: 2;
   padding: 1em 3.2em;
 }
 @media screen and (max-width: 1024px) {
   .btn-watch-online {
     top: 20rem;
-    left: 40rem;
+    right: 12rem;
   }
 }
 
@@ -221,7 +222,7 @@ a:active,
   width: 29.063rem;
   height: 29.063rem;
   border-radius: 50%;
-  left: 50.438rem;
+  right: 14rem;
   top: 0.75rem;
 }
 @media screen and (max-width: 1440px) {
@@ -234,7 +235,7 @@ a:active,
   .circle {
     width: 14.85rem;
     height: 14.85rem;
-    left: 35rem;
+    right: 14rem;
     top: 0.75rem;
   }
 }
@@ -272,11 +273,11 @@ a:active,
   }
 
   .circle {
-    left: 25rem;
+    right: 8rem;
     top: 0.75rem;
   }
   .card-favorite h2 {
-    left: 25rem;
+    right: 5rem;
     top: 3.6rem;
   }
   .btn-watch-online {
