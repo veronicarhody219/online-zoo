@@ -199,15 +199,14 @@ a:active,
 }
 .btn-watch-online {
   position: absolute;
-  top: 34.125rem;
+  bottom: 12rem;
   right: 14rem;
   z-index: 2;
   padding: 1em 3.2em;
 }
 @media screen and (max-width: 1024px) {
   .btn-watch-online {
-    top: 20rem;
-    right: 12rem;
+    bottom: 9rem;
   }
 }
 
@@ -281,7 +280,7 @@ a:active,
     top: 3.6rem;
   }
   .btn-watch-online {
-    top: 17.438rem;
+    bottom: 2.5rem;
     left: 1.25rem;
   }
 }
