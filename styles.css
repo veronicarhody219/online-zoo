@@ -986,16 +986,88 @@ a:active,
     top: 0;
   }
 }
-@media screen and (max-width) {
+@media screen and (max-width: 320px) {
   .footer {
     display: flex;
     flex-direction: column;
+    padding: 0.1em;
+    margin: 0.1em;
   }
+
   .footer-socials ul {
     display: flex;
     flex-direction: column;
   }
+  .footer-socials ul li {
+    padding: 0.1em;
+  }
+  .footer-socials-nav ul li {
+    padding: 0.1em;
+    margin: 0.1em;
+  }
+  .footer-socials-nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-socials-nav :nth-child(3) {
+    order: 2;
+  }
+  .footer-socials {
+    display: block;
+
+    margin: 0;
+  }
+  .footer-socials ul {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .footer-socials-2 {
+    display: none;
+  }
   li.hidden {
     display: none;
+  }
+  .footer-ref {
+    display: flex;
+
+    flex-direction: column;
+  }
+  .footer-ref p {
+    margin: 0.2em auto;
+    font-size: 0.9rem;
+  }
+  .footer-nav-content {
+    justify-content: center;
+    align-items: center;
+  }
+  .btn-donate {
+    width: 90vw;
+    margin: 0.5em auto;
+    place-items: center;
+  }
+  div.btn-donate {
+    width: 90vw;
+    margin: 0.5em auto;
+  }
+  .footer-logo-content {
+    width: 90vw;
+    margin: 1em auto;
+    border: none;
+  }
+  .footer-logo-content a {
+    margin: 0 auto;
+  }
+
+  .nav-logo.footer-logo-content:after {
+    content: "";
+    width: 0.875rem;
+    top: 0.5rem;
+    left: 9.5rem;
+    height: 1.313rem;
+    position: absolute;
+    background: url(./assets/bamboo.svg) no-repeat;
   }
 }
