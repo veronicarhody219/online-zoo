@@ -125,7 +125,7 @@ a:active,
   left: 0.563rem;
   height: 1.313rem;
   position: absolute;
-  background: url(./assets/bamboo.svg) no-repeat;
+  background: url(../assets/bamboo.svg) no-repeat;
 }
 
 .nav-designed-by {
@@ -479,26 +479,16 @@ a:active,
 }
 .donate-text span {
   font-weight: 500;
-  font-size: 72px;
+  font-size: 4.5rem;
   line-height: 80%;
 }
 .donate-text p {
   padding-top: 1em;
   white-space: nowrap;
 }
-/* @media screen and (max-width: 768px) {
-  .amount-toggle {
-    display: none;
-  }
-  .timeline li:nth-child(1)::before,  .timeline li:nth-child(2)::before, .timeline li:nth-child(3)::before{
-    display: none;
-    content: attr(data-amount);
-    font-size: 1.5rem;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-} */
+.amount-toggle-2 {
+  display: none;
+}
 
 .timeline-title {
   margin-right: auto;
@@ -514,7 +504,72 @@ a:active,
 .multiply {
   font-size: 2rem;
 }
+@media screen and (max-width: 768px) {
+  .amount-toggle-1 {
+    display: none;
+  }
+  .amount-toggle-2 {
+    display: block;
+  }
+  .timeline li::before {
+    font-size: 1.5rem;
+  }
+  .donate-img img {
+    width: 8rem;
+  }
+  .donate-text span {
+    font-size: 2rem;
+  }
+  .card-container-pick-a-friend > * + * {
+    padding-left: 0.5em;
+  }
+  .pick-a-friend-1 {
+    padding: 0 1em;
+  }
+  .pick-a-friend-1 h3 {
+    font-size: 1.5rem;
+  }
+  .pick-a-friend-1 p {
+    font-size: 1.2rem;
+  }
+}
 
+@media screen and (max-width: 425px) {
+  .timeline li::before {
+    font-size: 1rem;
+  }
+  .donate-img img {
+    width: 5rem;
+  }
+  .donate-text span {
+    font-size: 2rem;
+  }
+  .donate-text p {
+    font-size: 0.8rem;
+  }
+  .multiply {
+    padding-right: 0.2em;
+  }
+  .share {
+    font-size: 0.8rem;
+  }
+  .pick-a-friend-1 h3 {
+    font-size: 1rem;
+  }
+  .pick-a-friend-1 p {
+    font-size: 0.8rem;
+  }
+  .pick-a-friend-intro h3 {
+    font-size: 1.5rem;
+    padding-bottom: 0.8em;
+  }
+  .pick-a-friend-intro h4 {
+    font-size: 1.2rem;
+  }
+  .pick-a-friend-intro p {
+    font-size: 1rem;
+  }
+}
 /* ******** footer */
 .footer {
   background: var(--black-2);
@@ -532,7 +587,7 @@ a:active,
   font-size: 1rem;
   border: 1px solid var(--orange);
   color: white;
-  background: var(--black-2);
+  background: var(--background-1);
   border-radius: 2px;
 }
 .input-email::placeholder {
@@ -616,7 +671,88 @@ a:active,
     top: 0;
   }
 }
-.input {
-  color: var(--black-1);
-  background: var(--gray-light);
+@media screen and (max-width: 425px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    padding: 0.1em;
+    margin: 0.1em;
+  }
+
+  .footer-socials ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-socials ul li {
+    padding: 0.1em;
+  }
+  .footer-socials-nav ul li {
+    padding: 0.1em;
+    margin: 0.1em;
+  }
+  .footer-socials-nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-socials-nav :nth-child(3) {
+    order: 2;
+  }
+  .footer-socials {
+    display: block;
+
+    margin: 0;
+  }
+  .footer-socials ul {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .footer-socials-2 {
+    display: none;
+  }
+  li.hidden {
+    display: none;
+  }
+  .footer-ref {
+    display: flex;
+    flex-direction: column;
+    margin: 1em auto;
+  }
+  .footer-ref p {
+    margin: 0.2em auto;
+    font-size: 0.9rem;
+  }
+  .footer-nav-content {
+    justify-content: center;
+    align-items: center;
+  }
+  .btn-donate {
+    width: 90vw;
+    margin: 0.5em auto;
+    place-items: center;
+  }
+  div.btn-donate {
+    width: 90vw;
+    margin: 0.5em auto;
+  }
+  .footer-logo-content {
+    width: 90vw;
+    margin: 1em auto;
+    border: none;
+  }
+  .footer-logo-content a {
+    margin: 0 auto;
+  }
+
+  .nav-logo.footer-logo-content:after {
+    content: "";
+    width: 0.875rem;
+    top: 0.5rem;
+    left: 9.5rem;
+    height: 1.313rem;
+    position: absolute;
+    background: url(../assets/bamboo.svg) no-repeat;
+  }
 }

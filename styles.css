@@ -1083,8 +1083,8 @@ img.hidden-2 {
   }
   .footer-ref {
     display: flex;
-
     flex-direction: column;
+    margin-bottom: 1em;
   }
   .footer-ref p {
     margin: 0.2em auto;
