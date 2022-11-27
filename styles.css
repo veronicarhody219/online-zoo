@@ -285,7 +285,7 @@ a:active,
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 425px) {
   .circle {
     width: 7.438rem;
     height: 7.438rem;
@@ -386,7 +386,7 @@ a:active,
     max-width: 70%;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 425px) {
   .hero h3 {
     padding: 0.1rem;
     margin: 0.1rem;
@@ -614,7 +614,7 @@ a:active,
     padding: 0 0.1em;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 425px) {
   .cards {
     display: flex;
     flex-direction: column;
@@ -747,7 +747,7 @@ img.hidden-2 {
     font-size: 2rem;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 425px) {
   .pick-a-friend-2 {
     flex-direction: column;
   }
@@ -927,6 +927,14 @@ img.hidden-2 {
     width: 0;
     height: 0;
   }
+  .img-right-2 {
+    width: 6rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .img-right-2 {
+    width: 5rem;
+  }
 }
 /* ******** footer */
 .footer {
@@ -1029,7 +1037,7 @@ img.hidden-2 {
     top: 0;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 425px) {
   .footer {
     display: flex;
     flex-direction: column;
