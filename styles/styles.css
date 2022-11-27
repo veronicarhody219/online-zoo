@@ -460,6 +460,7 @@ a:active,
 }
 .share {
   padding-top: 2em;
+  color: var(--black-1);
 }
 .radio-container {
   display: flex;
