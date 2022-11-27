@@ -299,12 +299,12 @@
                   We know the animals bring you joy, and in these extraordinary
                   times, we’re glad.
                 </p>
-                <p class="pick-a-friend-text2">
+                <p class="pick-a-friend-text2 hidden">
                   During a time when the COVID-19 epidemic is touching all of
                   our lives, we’re proud and glad that people around the world
                   find joy in PetStory.
                 </p>
-                <p class="pick-a-friend-text3">
+                <p class="pick-a-friend-text3 hidden">
                   Even though the zoo has reopened, we need you now more than
                   ever to help us deal with these problems. Please consider a
                   gift to our
@@ -319,14 +319,16 @@
                   </div>
                   <p>Pay with card</p>
                 </div>
-                <img src="./assets/Vector.svg" alt="arrow vector" />
+                <img class="hidden" src="./assets/Vector.svg" alt="arrow vector" />
+                <img class="hidden-2 green-arrow-1" src="./assets//arrowgreen.svg" alt=" green arrow">
                 <div class="card-container-pick-a-friend-2">
                   <div class="card card-white">
                     <img src="./assets/zoo.svg" alt="zoo icon" />
                   </div>
                   <p>Payment goes to the zoo</p>
                 </div>
-                <img src="./assets/Vector.svg" alt="arrow vector" />
+                <img class="hidden" src="./assets/Vector.svg" alt="arrow vector" />
+                <img class="hidden-2 green-arrow-2" src="./assets//arrowgreen.svg" alt=" green arrow">
                 <div class="card-container-pick-a-friend-2">
                   <div class="card card-white">
                     <img src="./assets/monkey.svg" alt="monkey icon" />
@@ -487,9 +489,10 @@
       </main>
       <footer class="footer">
         <div class="footer-logo">
-          <div class="logo">
-            <a href="/index.html"><img src="./assets/logo.svg" alt="logo" /></a>
-          </div>
+          <h1 class="nav-logo logo footer-logo-content">
+            <a href="index.html">PetStory Online</a>
+          </h1>
+
           <div class="input-container">
             <h3>Subscribe to our news</h3>
             <input
@@ -545,7 +548,7 @@
           </div>
         </div>
 
-        <div><button class="btn btn-donate">donate for volunteers</button></div>
+        <button class="btn btn-donate">donate for volunteers</button>
 
         <div class="footer-socials-nav">
           <div class="footer-socials">
@@ -595,7 +598,7 @@
               <li><a href="index.html">About</a></li>
               <li><a href="map.html">Map</a></li>
               <li><a href="zoos.html">Zoos</a></li>
-              <li><a href="donate.html">Donate</a></li>
+              <li class="hidden"><a href="donate.html">Donate</a></li>
               <li><a href="contact.html">Contact us</a></li>
             </ul>
           </div>

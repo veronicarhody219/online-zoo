@@ -284,6 +284,28 @@ a:active,
     left: 1.25rem;
   }
 }
+
+@media screen and (max-width: 425px) {
+  .circle {
+    width: 7.438rem;
+    height: 7.438rem;
+    right: 1rem;
+    top: 1rem;
+  }
+  .btn-watch-online {
+    display: block;
+    top: 10rem;
+    width: 80vw;
+    place-items: center;
+    padding-bottom: 2em;
+  }
+  .card-favorite h2 {
+    font-size: 1.75rem;
+    right: 0.1rem;
+    top: 1.8rem;
+    max-width: 10rem;
+  }
+}
 /* *************** Backstage */
 .hero {
   position: relative;
@@ -362,6 +384,31 @@ a:active,
   }
   .container-backstage {
     max-width: 70%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .hero h3 {
+    padding: 0.1rem;
+    margin: 0.1rem;
+    font-size: 1.5rem;
+  }
+  .hero h4 {
+    padding-bottom: 0.2rem;
+  }
+  .backstage.backstage-text {
+    padding: 0.1em;
+  }
+
+  .img-decor img {
+    width: 5rem;
+    overflow: hidden;
+  }
+  .backstage {
+    padding: 0.5em;
+  }
+  .btn-favorite {
+    display: flex;
+    align-items: center;
   }
 }
 /* *********** Pets block */
@@ -567,6 +614,26 @@ a:active,
     padding: 0 0.1em;
   }
 }
+@media screen and (max-width: 425px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0em;
+  }
+  .card-container {
+    width: 90vw;
+  }
+  .card-img {
+    width: 90vw;
+  }
+  .arrow {
+    display: none;
+  }
+  .img-left,
+  .img-right-1 {
+    width: 5rem;
+  }
+}
 
 /* ******** pick a friend */
 .container-pick-a-friend {
@@ -635,7 +702,11 @@ a:active,
   text-decoration: underline var(--orange);
   color: var(--black-1);
 }
+img.hidden-2 {
+  display: none;
+}
 .pick-a-friend-2 {
+  position: relative;
   display: flex;
   flex-direction: row;
   padding-top: 1.5em;
@@ -674,6 +745,50 @@ a:active,
   }
   .pick-a-friend-1 h4 {
     font-size: 2rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .pick-a-friend-2 {
+    flex-direction: column;
+  }
+  .container-pick-a-friend-content {
+    padding: 1em;
+    margin: 1em;
+  }
+  .pick-a-friend-1 {
+    padding: 0.8em;
+  }
+  .pick-a-friend-1 h3 {
+    font-size: 1.2rem;
+  }
+  .pick-a-friend-1 h4 {
+    font-size: 1.4rem;
+    margin: 0;
+  }
+  .pick-a-friend-1 p {
+    font-size: 1rem;
+  }
+  .pick-a-friend-text2.hidden,
+  .pick-a-friend-text3.hidden {
+    display: none;
+  }
+  img.hidden {
+    display: none;
+  }
+  img.hidden-2 {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    right: -1.8rem;
+  }
+  img.hidden-2.green-arrow-1 {
+    top: 10rem;
+  }
+  img.hidden-2.green-arrow-2 {
+    top: 25rem;
+  }
+  .btn-feed-friend {
+    font-size: 0.8rem;
   }
 }
 
@@ -812,6 +927,14 @@ a:active,
     width: 0;
     height: 0;
   }
+  .img-right-2 {
+    width: 6rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .img-right-2 {
+    width: 5rem;
+  }
 }
 /* ******** footer */
 .footer {
@@ -912,5 +1035,90 @@ a:active,
     position: absolute;
     right: 0;
     top: 0;
+  }
+}
+@media screen and (max-width: 425px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    padding: 0.1em;
+    margin: 0.1em;
+  }
+
+  .footer-socials ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-socials ul li {
+    padding: 0.1em;
+  }
+  .footer-socials-nav ul li {
+    padding: 0.1em;
+    margin: 0.1em;
+  }
+  .footer-socials-nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-socials-nav :nth-child(3) {
+    order: 2;
+  }
+  .footer-socials {
+    display: block;
+
+    margin: 0;
+  }
+  .footer-socials ul {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .footer-socials-2 {
+    display: none;
+  }
+  li.hidden {
+    display: none;
+  }
+  .footer-ref {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+  }
+  .footer-ref p {
+    margin: 0.2em auto;
+    font-size: 0.9rem;
+  }
+  .footer-nav-content {
+    justify-content: center;
+    align-items: center;
+  }
+  .btn-donate {
+    width: 90vw;
+    margin: 0.5em auto;
+    place-items: center;
+  }
+  div.btn-donate {
+    width: 90vw;
+    margin: 0.5em auto;
+  }
+  .footer-logo-content {
+    width: 90vw;
+    margin: 1em auto;
+    border: none;
+  }
+  .footer-logo-content a {
+    margin: 0 auto;
+  }
+
+  .nav-logo.footer-logo-content:after {
+    content: "";
+    width: 0.875rem;
+    top: 0.5rem;
+    left: 9.5rem;
+    height: 1.313rem;
+    position: absolute;
+    background: url(./assets/bamboo.svg) no-repeat;
   }
 }

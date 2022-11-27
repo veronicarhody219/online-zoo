@@ -88,11 +88,20 @@
               </div>
             </div>
             <p class="timeline-title">Amount</p>
-            <div class="timeline-container">
+            <div class="timeline-container amount-toggle-1">
               <ul class="timeline">
                 <li data-amount="$5000" class="amount-toggle"></li>
                 <li data-amount="$2000" class="amount-toggle"></li>
                 <li data-amount="$1000" class="amount-toggle"></li>
+                <li data-amount="$500"></li>
+                <li data-amount="$250"></li>
+                <li data-amount="$100"></li>
+                <li data-amount="$50"></li>
+                <li data-amount="$25"></li>
+              </ul>
+            </div>
+            <div class="timeline-container amount-toggle-2">
+              <ul class="timeline">
                 <li data-amount="$500"></li>
                 <li data-amount="$250"></li>
                 <li data-amount="$100"></li>
@@ -131,11 +140,13 @@
         </div>
       </section>
     </main>
+
     <footer class="footer">
       <div class="footer-logo">
-        <div class="logo">
-          <a href="/index.html"><img src="./assets/logo.svg" alt="logo" /></a>
-        </div>
+        <h1 class="nav-logo logo footer-logo-content">
+          <a href="index.html">PetStory Online</a>
+        </h1>
+
         <div class="input-container">
           <h3>Subscribe to our news</h3>
           <input
@@ -191,7 +202,7 @@
         </div>
       </div>
 
-      <div><button class="btn btn-donate">donate for volunteers</button></div>
+      <button class="btn btn-donate">donate for volunteers</button>
 
       <div class="footer-socials-nav">
         <div class="footer-socials">
@@ -241,7 +252,7 @@
             <li><a href="index.html">About</a></li>
             <li><a href="map.html">Map</a></li>
             <li><a href="zoos.html">Zoos</a></li>
-            <li><a href="donate.html">Donate</a></li>
+            <li class="hidden"><a href="donate.html">Donate</a></li>
             <li><a href="contact.html">Contact us</a></li>
           </ul>
         </div>
