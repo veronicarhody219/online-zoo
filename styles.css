@@ -284,6 +284,28 @@ a:active,
     left: 1.25rem;
   }
 }
+
+@media screen and (max-width: 320px) {
+  .circle {
+    width: 7.438rem;
+    height: 7.438rem;
+    right: 1rem;
+    top: 1rem;
+  }
+  .btn-watch-online {
+    display: block;
+    top: 10rem;
+    width: 80vw;
+    place-items: center;
+    padding-bottom: 2em;
+  }
+  .card-favorite h2 {
+    font-size: 1.75rem;
+    right: 0.1rem;
+    top: 1.8rem;
+    max-width: 10rem;
+  }
+}
 /* *************** Backstage */
 .hero {
   position: relative;
@@ -362,6 +384,31 @@ a:active,
   }
   .container-backstage {
     max-width: 70%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .hero h3 {
+    padding: 0.1rem;
+    margin: 0.1rem;
+    font-size: 1.5rem;
+  }
+  .hero h4 {
+    padding-bottom: 0.2rem;
+  }
+  .backstage.backstage-text {
+    padding: 0.1em;
+  }
+
+  .img-decor img {
+    width: 5rem;
+    overflow: hidden;
+  }
+  .backstage {
+    padding: 0.5em;
+  }
+  .btn-favorite {
+    display: flex;
+    align-items: center;
   }
 }
 /* *********** Pets block */
@@ -567,6 +614,26 @@ a:active,
     padding: 0 0.1em;
   }
 }
+@media screen and (max-width: 320px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0em;
+  }
+  .card-container {
+    width: 90vw;
+  }
+  .card-img {
+    width: 90vw;
+  }
+  .arrow {
+    display: none;
+  }
+  .img-left,
+  .img-right-1 {
+    width: 5rem;
+  }
+}
 
 /* ******** pick a friend */
 .container-pick-a-friend {
@@ -674,6 +741,11 @@ a:active,
   }
   .pick-a-friend-1 h4 {
     font-size: 2rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .pick-a-friend-2 {
+    flex-direction: column;
   }
 }
 
@@ -912,5 +984,18 @@ a:active,
     position: absolute;
     right: 0;
     top: 0;
+  }
+}
+@media screen and (max-width) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-socials ul {
+    display: flex;
+    flex-direction: column;
+  }
+  li.hidden {
+    display: none;
   }
 }
