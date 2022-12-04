@@ -936,6 +936,32 @@ img.hidden-2 {
     width: 5rem;
   }
 }
+
+.modal {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  text-align: center;
+  gap: 1em;
+  padding: 1em;
+  border-image: var(--pink-gradient) 30% round;
+  border-width: 2px;
+  border-style: solid;
+  margin-bottom: 1.25em;
+  font-size: 0.9375rem;
+  color: var(--gray);
+  z-index: 1;
+}
+.modal::backdrop {
+  background: var(--pink-gradient) 30% round;
+  opacity: 0.1;
+}
+@media screen and (max-width: 425px) {
+  .modal{
+     width: 80%;
+  }
+}
 /* ******** footer */
 .footer {
   background: var(--black-2);
